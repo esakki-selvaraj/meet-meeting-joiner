@@ -2,6 +2,10 @@ var data=[];
 var time;
 var day;
 function setData(result){
+    if(result===[]||result==null){
+        data = [];
+        return;
+    }
     data = [ ...result.meetUrls ]
 }
 function getData(){
