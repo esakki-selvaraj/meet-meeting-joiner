@@ -6,6 +6,7 @@ function setData(result){
         data = [];
         return;
     }
+    console.log(result);
     data = [ ...result.meetUrls ]
 }
 function getData(){
