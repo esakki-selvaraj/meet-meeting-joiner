@@ -37,8 +37,10 @@ Submit.addEventListener('click',()=>{
     console.log(valueToStore);
     if(checkUrl(meetUrlInput)){
         chrome.storage.local.get(['meetUrls'],(result)=>{
-            console.log(result);
-            if(result.meetUrls.constructor === Array){
+            if(result==undefined){
+                result = [];
+            }
+            else if(result.meetUrls.constructor === Array){
                 result = [...result.meetUrls];
                 if(result[0]===null){
                     result = [];
