@@ -3,7 +3,7 @@ function DataLoad()
 {
     const tableDetailDiv = document.getElementById('tableDetails');
     chrome.storage.local.get(['meetUrls'],(result)=>{
-    if(result.meetUrls.constructor === Array && result.meetUrls !== []){
+    if(result.meetUrls!=undefined && result.meetUrls.constructor === Array && result.meetUrls !== []){
         result = [...result.meetUrls];
         console.log(result);
         if(result[0]===null||result.length===0){
