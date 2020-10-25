@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css" >
+            body {
+            min-width: 400px; /* your desired width */
+            max-width: 100%;
+            max-height: 100%;
+            position: relative;
+            vertical-align:middle;
+            text-align: center;
+            text-shadow:1px 1px 1px blanchedalmond;
+            background-color: rgb(32, 33, 36);;
+            color:white;
+            }
+            #submitButton{
+                background-color: #294959;
+                box-shadow: 1px 1px 1px white;
+                text-shadow:0.5px 0.5px 0.5px rgb(3, 3, 3);
+                border-radius: 5px;
+                color:#ffffff;
+                font-weight: bold;
+            }
+            a{
+            text-decoration: none;
+            color:whitesmoke
+        }
+    </style >
+</head>
+<body>
+    <h1>Meet Meeting Joiner</h1>
+    <label for="meetUrl">Enter Meet Url</label><br>
+    <input type="text" id="meetUrl" name="meetUrl"><br>
+    <br>
+    <label for="Time&Day">Time and Days</label>
+    <div id="Time&Day">
+        <select name="timeHr" id="timeHr">
+        </select>
+        <select name="timeMin" id="timeMin">
+        </select>
+    </div>
+    <br>
+    <div id="Days">
+
+    </div><br>
+    <button id='submitButton'>Submit</button>
+
+    <br>
+    <h3 style='color:#ffffff'>Follow my github <span style='color:red;'>&#10084;</span></h3>
+    <h4>Share your ideas and issues here</h4>
+    <a href='./detailsPopUp.html'>Click here to display all links</a>
+    <br>
+    <script type="text/javascript" src="./js/popup.js"></script>
+</body>
+</html>
