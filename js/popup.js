@@ -2,6 +2,7 @@ const timeHr = document.getElementById('timeHr');
 const hrsArr = [...Array(24).keys()].map((i,val)=>{return `<option value='${i+1}'>${i+1}</option>`}).reduce((tot,val)=>{return tot+val});
 timeHr.innerHTML = hrsArr;
 const timeMin = document.getElementById('timeMin');
+const githubLink = document.getElementById('github-link');
 const hrsMin = [...Array(60).keys()].map((i,val)=>{return `<option value='${i}'>${i}</option>`}).reduce((tot,val)=>{return tot+val});
 timeMin.innerHTML = hrsMin;
 const dayDiv = document.getElementById('Days');
@@ -19,6 +20,9 @@ function checkUrl(Url){
 }
 
 const Submit = document.getElementById('submitButton');
+githubLink.addEventListener('click',()=>{
+    window.open('https://github.com/esakki-selvaraj/meet-meeting-joiner','_blank');
+})
 Submit.addEventListener('click',()=>{
     const meetUrl = document.getElementById('meetUrl');
     const hrs = document.getElementById('timeHr');
